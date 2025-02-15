@@ -1,0 +1,47 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    color: yellow;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    text-shadow: 2px 2px 10px yellow;
+}
+
+.springbonnie img {
+    width: 250px;
+    filter: drop-shadow(0px 0px 10px yellow);
+}
+
+.dialog-box {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid yellow;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.8);
+    color: lime;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px lime;
+    animation: glitch 1s infinite alternate;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: yellow;
+    color: black;
+    cursor: pointer;
+}
+
+@keyframes glitch {
+    0% { text-shadow: -2px 2px red, 2px -2px blue; }
+    100% { text-shadow: 2px -2px red, -2px 2px blue; }
+          }
